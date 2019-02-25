@@ -1,0 +1,54 @@
+x-transactions-view {
+  .menuCenter {
+    text-align: center
+  }
+  main > .container {
+    padding: 60px 15px 0;
+  }
+
+  .footer {
+    background-color: #f5f5f5;
+  }
+
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mainPage {
+    height: 100%;
+    margin-top: 5px;
+  }
+
+  .bg-info {
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    left: 7px;
+    position: relative;
+  }
+  .clearfix {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  .text-justify {
+    margin-top: 4px;
+  }
+
+  .col-sm-4.currentSale {
+    margin: 10px;
+  }
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .btn-action {
+    margin: 7px;
+    margin-top: 17px;
+  }
+
+  .itemSale {
+    padding: 9px;
+    border-bottom: 1px dashed rgb(141, 114, 114);
+  }
+}

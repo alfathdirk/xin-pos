@@ -1,0 +1,13 @@
+.navbar-brand {
+  margin-left: 1rem;
+}
+
+@media (min-width: 576px) {
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-brand {
+    margin-left: 0;
+  }
+}

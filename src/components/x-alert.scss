@@ -1,0 +1,28 @@
+.x-alert__container {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  right: 0;
+
+  display: none;
+  padding: 10px 10%;
+}
+
+.x-alert--visible {
+  display: block;
+}
+
+x-alert {
+  display: block;
+  min-height: 50px;
+
+  #message {
+    margin-right: 20px;
+  }
+
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+}

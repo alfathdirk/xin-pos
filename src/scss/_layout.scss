@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+}
+
+body[view=login] {
+  x-drawer {
+    transform: translateX(-100%)
+  }
+
+  [main] {
+    padding-left: 0!important;
+  }
+}
+
+.scroll-y {
+  overflow-y: auto;
+}

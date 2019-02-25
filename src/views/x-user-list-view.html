@@ -1,0 +1,51 @@
+<div class="d-flex flex-column h-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button type="button" class="navbar-toggler">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="flex-fill">
+      <span class="navbar-brand">User list</span>
+    </div>
+    <div class="btn-group">
+      <a href="#!/user/new" class="btn btn-outline-primary">Add</a>
+    </div>
+  </nav>
+
+  <x-grid class="flex-fill">
+    <div id="header">
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th width="150">First</th>
+            <th width="150">Last</th>
+            <th width="150">Username</th>
+            <th width="50"></th>
+            <th></th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <div id="body">
+      <table class="table table-striped table-hover">
+        <tbody></tbody>
+      </table>
+
+      <xin-for items="[[rows]]" as="row" to="tbody">
+        <template>
+          <tr>
+            <td>[[row.firstname]]</td>
+            <td>[[row.lastname]]</td>
+            <td>[[row.username]]</td>
+            <td>
+              <a href="[[row | showLink:/user/edit/{id}]]" title="Show"><span class="oi oi-document"></span></a>
+            </td>
+            <td></td>
+          </tr>
+        </template>
+      </xin-for>
+    </div>
+  </x-grid>
+
+  <x-pagination base-uri="/user/list" skip="[[skip]]" limit="[[limit]]" count="[[count]]" class="mx-auto my-2"></x-pagination>
+</div>

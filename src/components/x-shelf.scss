@@ -1,0 +1,34 @@
+x-shelf {
+  display: block;
+  position: relative;
+  height: 100%;
+
+  [main] {
+    height: 100%;
+    transition: 300ms all;
+  }
+
+  &.x-shelf--left-mount [main] {
+    padding-left: 300px;
+  }
+
+  &.x-shelf--right-mount [main] {
+    padding-right: 300px;
+  }
+
+  .x-shelf__backdrop {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .5;
+    display: none;
+
+    &.x-shelf__backdrop--visible {
+      display: block;
+    }
+  }
+}

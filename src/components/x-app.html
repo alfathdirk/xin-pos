@@ -1,0 +1,34 @@
+<xin-title-middleware></xin-title-middleware>
+<xin-lazy-view-middleware></xin-lazy-view-middleware>
+
+<connect-pool base-url="[[config.apiUrl]]" id="api" headers="[[headers]]"></connect-pool>
+
+<x-shelf>
+  <x-drawer id="drawer">
+    <div class="d-flex align-items-center p-3">
+      <div class="avatar"><img src="../img/userphoto.jpeg" alt="" class="img-fluid rounded-circle" style="width: 100px; height: 100px;"></div>
+      <div class="title ml-2">
+        <h1 class="h4">AlfathDirk</h1>
+        <p></p>
+      </div>
+    </div>
+    <x-sidemenu></x-sidemenu>
+  </x-drawer>
+
+  <div main>
+    <xin-pager>
+      <x-login-view title="Login" lazy-view uri="/login"></x-login-view>
+      <x-home-view title="Home" lazy-view uri="/"></x-home-view>
+
+      <x-user-single-view title="New user" lazy-view uri="/user/new"></x-user-single-view>
+      <x-user-single-view title="Edit user" lazy-view uri="/user/edit/{id}"></x-user-single-view>
+      <x-user-list-view title="User list" lazy-view uri="/user/list[/skip/{skip}/limit/{limit}]"></x-user-list-view>
+
+      <x-transactions-view title="Transaction" lazy-view uri="/transaction/list[/skip/{skip}/limit/{limit}]"></x-transactions-view>
+
+      <x-customer-card-view title="Search customer" lazy-view uri="/customer/search"></x-customer-card-view>
+      <x-customer-card-view title="New customer" lazy-view uri="/customer/new" mode="create"></x-customer-card-view>
+      <x-customer-card-view title="Edit customer" lazy-view uri="/customer/edit[/{id}]" mode="update"></x-customer-card-view>
+    </xin-pager>
+  </div>
+</x-shelf>

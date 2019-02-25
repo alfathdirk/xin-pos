@@ -1,0 +1,13 @@
+<ul class="pagination">
+  <li class="page-item" id="prevLink">
+    <a href="#" (click)="gotoPrev(evt)" class="page-link">&lt;</a>
+  </li>
+  <li class="page-item disabled">
+    <div class="page-link">
+      <span>[[computeFirst(skip, count)]]</span>-<span>[[computeLast(skip, limit, count)]]</span> of <span>[[count]]</span>
+    </div>
+  </li>
+  <li class="page-item" id="nextLink">
+    <a href="#" (click)="gotoNext(evt)" class="page-link">&gt;</a>
+  </li>
+</ul>

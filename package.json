@@ -1,0 +1,57 @@
+{
+  "name": "xin-bootstrap-example",
+  "version": "0.0.1",
+  "description": "Xin with bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf www",
+    "lint": "eslint .",
+    "test": "mocha test/**",
+    "coverage": "nyc --reporter=lcov npm test",
+    "dev": "webpack-dev-server",
+    "build": "webpack",
+    "precommit": "npm run lint && npm test"
+  },
+  "author": "Ganesha <reekoheek@gmail.com> (http://sagara.id)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reekoheek/xin-bootstrap-example.git"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.5.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-xinix": "^1.1.2",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^0.14.3",
+    "mini-css-extract-plugin": "^0.4.2",
+    "mocha": "^5.2.0",
+    "node-sass": "^4.9.2",
+    "nyc": "^13.0.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.0.3",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.8",
+    "webpack-pwa-manifest": "^3.7.1",
+    "workbox-webpack-plugin": "^3.4.1"
+  },
+  "dependencies": {
+    "@webcomponents/custom-elements": "^1.1.2",
+    "@xinix/xin": "^2.6.1",
+    "bootstrap": "^4.1.2",
+    "jquery": "^3.3.1",
+    "open-iconic": "^1.1.1",
+    "popper.js": "^1.14.3"
+  }
+}

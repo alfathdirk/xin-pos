@@ -1,0 +1,35 @@
+x-drawer {
+  position: absolute;
+  z-index: 99;
+  transition: 300ms transform;
+  top: 0;
+  background-color: #fff;
+
+  &[position=left],
+  &[position=right] {
+    width: 300px;
+    max-width: 85%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 0;
+  }
+
+  &[position=left] {
+    left: 0;
+    border-right: 1px solid #eee;
+
+    &.x-drawer--hidden {
+      transform: translateX(-100%);
+    }
+  }
+
+  &[position=right] {
+    right: 0;
+    border-left: 1px solid #eee;
+
+    &.x-drawer--hidden {
+      transform: translateX(100%);
+    }
+  }
+}

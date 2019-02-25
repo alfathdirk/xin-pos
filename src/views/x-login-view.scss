@@ -1,0 +1,18 @@
+x-login-view {
+  .viewport {
+    background-image: url(https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall-750x500.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .box {
+      background-color: rgba(255, 255, 255, .8);
+      box-shadow: 0 22px 70px 4px rgba(0, 0, 0, 0.56);
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+}

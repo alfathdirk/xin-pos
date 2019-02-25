@@ -1,0 +1,33 @@
+x-grid {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  position: relative;
+  border-bottom: 1px solid #dee2e6;
+
+  > #header {
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    display: table;
+  }
+
+  > #body {
+    display: table;
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  table {
+    table-layout: fixed;
+    margin-bottom: 0!important;
+    width: 100%;
+    max-width: 100%;
+
+    td, th {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
